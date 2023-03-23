@@ -29,11 +29,14 @@ searchUser.addEventListener('keyup',(e)=>{
             if (data.profile.message==='Not Found') {
 
                 // show alert
+
+                ui.showAlert('User not Found','alert alert-danger');
                 
             } else {
                 //show profile
 
                 ui.showProfile(data.profile);
+                ui.showRepos(data.repos);
             }
         })
     }
